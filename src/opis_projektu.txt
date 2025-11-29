@@ -1,0 +1,40 @@
+Projekt: Aplikacja do planowania nauki dla studentów
+
+Cel:
+Aplikacja pomaga studentom (18–25 lat) lepiej organizować naukę, redukując chaos informacyjny i brak struktury podczas studiów.
+
+Problematyka:
+Brak przejrzystych priorytetów, rozproszenie zadań i przeciążenie obowiązkami prowadzą do obniżonej efektywności nauki.
+
+Odbiorcy:
+Studenci w wieku 18–25 lat potrzebujący prostego narzędzia do planowania zadań i przeglądu tygodnia.
+
+Funkcje podstawowe:
+- Lista zadań z priorytetami, terminami i możliwością oznaczania wykonanych pozycji.
+- Kalendarz tygodniowy do planowania sesji nauki i zajęć.
+- Proste statystyki (czas poświęcony, liczba ukończonych zadań, wykresy tygodniowe).
+- Powiadomienia o zbliżających się terminach (opcjonalnie).
+
+Wymagania niefunkcjonalne:
+- Intuicyjny, responsywny interfejs (mobile-first).
+- Szybkie i lekkie działanie.
+- Prywatność danych użytkownika; minimalne przechowywanie danych lokalnie lub szyfrowane w chmurze.
+
+Technologia (propozycja):
+Frontend: React / Vue, CSS moduły lub Tailwind.
+Backend (opcjonalny): Node.js + Express, baza danych SQLite/Postgres.
+Autoryzacja: prosty system kont lub tryb anonimowy z lokalnym zapisem.
+
+Zakres MVP:
+- Implementacja listy zadań, widoku tygodniowego i podstawowych statystyk.
+- Możliwość dodawania/edycji/usuwania zadań oraz oznaczania wykonania.
+- Eksport/import danych (CSV) i podstawowe powiadomienia.
+
+Kryteria sukcesu:
+- Użytkownik potrafi zorganizować tydzień nauki w <10 minut.
+- Zauważalny wzrost systematyczności po 2 tygodniach używania (ankieta/feedback).
+
+Plan rozwoju:
+1. MVP: lista zadań + tydzień + statystyki.
+2. Rozszerzenia: powiadomienia, synchronizacja kont, integracje z kalendarzem.
+3. Optymalizacje UX i analizowanie zachowań użytkowników.

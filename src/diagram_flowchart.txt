@@ -1,0 +1,85 @@
++---------------------------------------------------------------------------------+
+| Projekt: Aplikacja do planowania nauki dla studentów (18–25)                     |
++---------------------------------------------------------------------------------+
+
+Start
+    |
+    v
++-----------------------------+
+| Użytkownik: student 18-25   |
++-----------------------------+
+    |
+    v
++-----------------------------+       +---------------------------+
+| Interfejs (mobile-first)    |<------| Wymagania niefunkcjonalne |
+| - intuicyjny, responsywny   |       | - szybkie, lekkie         |
+| - prywatność danych         |       | - lokalne/szyfrowane dane |
++-----------------------------+       +---------------------------+
+    |
+    v
++---------------------------------------------+
+| Widok główny / Dashboard                     |
+| - Szybki dostęp: Lista zadań, Tydzień, Staty |
++---------------------------------------------+
+    |
+    v
++--------------------+      +---------------------+
+| Lista zadań        | <--> | Kalendarz tygodniowy|
+| - priorytety       |      | - plan sesji/zajęć  |
+| - terminy          |      +---------------------+
+| - dodaj/edytuj/usń |              |
+| - oznacz jako OK   |              v
++--------------------+      +---------------------+
+                 |                   | Powiadomienia      |
+                 v                   | - przypomnienia    |
++--------------------+       | - opcjonalne       |
+| Operacje na zadaniach |     +---------------------+
+| - dodaj/edytuj/usń    |
+| - oznacz wykonane     |
++--------------------+
+                 |
+                 v
++--------------------+
+| Statystyki         |
+| - czas poświęcony  |
+| - ukończone zadania|
+| - wykres tygodniowy|
++--------------------+
+                 |
+                 v
++--------------------+       +---------------------------+
+| Eksport/Import CSV |       | Autoryzacja (opcjonalnie) |
+| - backup danych     |       | - konto / tryb anonimowy  |
++--------------------+       +---------------------------+
+                 |                                |
+                 v                                v
++--------------------+           +-------------------+
+| Przechowywanie     |<----------| Backend (opcjonal)|
+| - lokalne/szyfrowane cloud     | - Node/Express    |
+| - minimalne dane    |           | - SQLite/Postgres|
++--------------------+           +-------------------+
+                 |
+                 v
++-----------------------------+
+| Kryteria sukcesu            |
+| - zorganizuj tydzień <10min |
+| - wzrost systematyczności   |
++-----------------------------+
+                 |
+                 v
++-----------------------------+
+| Plan rozwoju (roadmap)      |
+| 1) MVP: lista + tydzień +   |
+|    statystyki                |
+| 2) powiadomienia, sync,     |
+|    integracje kalendarza     |
+| 3) UX optymalizacje, analizy |
++-----------------------------+
+                 |
+                 v
+    Koniec / Przejście do implementacji MVP
+
+Legenda:
+- Grube bloki: moduły funkcjonalne
+- Strzałki: przepływ informacji/akcji
+- MVP: minimalny zestaw do wdrożenia
